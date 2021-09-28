@@ -22,4 +22,13 @@ class TriangleClassifyTest {
         String result = TriangleClassify.classifyTriangle(a, b, c);
         assertEquals(expected, result);
     }
+    @Test
+    void testRegularTriangle() {
+        int a = 3;
+        int b = 4;
+        int c = 5;
+        String expected = "regular triangle";
+        String result = TriangleClassify.classifyTriangle(a, b, c);
+        assertEquals(expected, result);
+    }
 }
