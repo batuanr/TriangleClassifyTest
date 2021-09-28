@@ -31,4 +31,22 @@ class TriangleClassifyTest {
         String result = TriangleClassify.classifyTriangle(a, b, c);
         assertEquals(expected, result);
     }
+    @Test
+    void testNotTriangle() {
+        int a = 8;
+        int b = 2;
+        int c = 3;
+        String expected = "not triangle";
+        String result = TriangleClassify.classifyTriangle(a, b, c);
+        assertEquals(expected, result);
+    }
+    @Test
+    void testNotTriangle1() {
+        int a = -1;
+        int b = -5;
+        int c = -3;
+        String expected = "not triangle";
+        String result = TriangleClassify.classifyTriangle(a, b, c);
+        assertEquals(expected, result);
+    }
 }
